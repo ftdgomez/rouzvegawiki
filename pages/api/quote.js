@@ -47,7 +47,7 @@ async function updateDoc(req){
     return doc
 }
 
-export default async (req, res) => {
+async function handler(req, res) {
     const method = req.method
 
     try {
@@ -95,3 +95,4 @@ export default async (req, res) => {
         })
     }
 }
+export default handler

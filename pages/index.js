@@ -59,17 +59,16 @@ export default function Home({ data }) {
             alignSelf="start"
           >
             <Heading as="h2" size="md" mb="1rem">
-              Diccionario "Larouz"
+              Diccionario &quot;Larouz&quot;
             </Heading>
             {data.words?.map(({ _id, word, definition, wordType }) => (
               <Flex key={_id} mb="1rem">
                 <Box p={2}>
-                  <Link href={`/word/${_id}`}>
+                  <Link passHref href={`/word/${_id}`}>
                     <Flex justifyContent="space-between">
                       <Heading
                         as="h3"
                         size
-                        fontWeight="normal"
                         textTransform="capitalize"
                         fontWeight="bold"
                         color="#FF8F57"
@@ -95,7 +94,7 @@ export default function Home({ data }) {
             <Link href="/collaborate">
               <a>Colaborar con el diccionario +</a>
             </Link>
-            <Link href="/collaborate">
+            <Link passHref href="/collaborate">
               <Button
                 variant="outline"
                 color="#FF8F57"
@@ -145,7 +144,7 @@ export default function Home({ data }) {
                 md: "0"
               }}
             >
-              <Image mt="1rem" src="/profile.png" />
+              <Image alt="Rouz vega profile picture" mt="1rem" src="/profile.png" />
               <Heading as="h2" size="md" mt="1rem">
                 Rouz Vega
               </Heading>
@@ -155,6 +154,7 @@ export default function Home({ data }) {
             </Box>
             <Image
             maxW="220px"
+            alt=""
              height="100%" width="auto" src="/bannermb.jpg" />
           </Flex>
           <Box p="1rem">
@@ -189,6 +189,7 @@ export default function Home({ data }) {
                         flexDir='column'
                       >
                         <Image 
+                          alt=""
                           height='21px'
                           width='21px'
                           src='/iconTimeline.svg'
@@ -221,7 +222,7 @@ export default function Home({ data }) {
                         p='2rem'
                       >
                         <Heading as="h3" size="md" color="white">
-                        "{post.quote}" <Text fontSize='sm' as='span'>Rouz Vega. {new Date(post.createdAt).getFullYear()}</Text>
+                        &quot; {post.quote} &quot; <Text fontSize='sm' as='span'>Rouz Vega. {new Date(post.createdAt).getFullYear()}</Text>
                         </Heading>
                       </Flex>
                     </Box>)}
@@ -246,6 +247,7 @@ export default function Home({ data }) {
                         }}
                       ></Box>
                       <Image 
+                      alt=""
                       display={{
                         base: 'block',
                         md: 'none',
@@ -274,7 +276,7 @@ export default function Home({ data }) {
             </Heading>
             <Grid templateColumns="1fr 1fr" mb="1rem">
               {data.characters?.map(({ _id, image, name }) => (
-                <Link key={_id} mb="1rem" href={`/word/${_id}`}>
+                <Link passHref key={_id} mb="1rem" href={`/word/${_id}`}>
                   <Flex
                     bgImage={image}
                     bgSize="cover"
@@ -307,7 +309,7 @@ export default function Home({ data }) {
             <Link href="/collaborate">
               <a>Colaborar con los personajes +</a>
             </Link>
-            <Link href="/collaborate">
+            <Link passHref href="/collaborate">
               <Button
                 variant="outline"
                 color="#FF8F57"
@@ -333,7 +335,7 @@ export default function Home({ data }) {
               Quieres aportar algo a esta web?
             </Heading>
             <Text>Eventualmente aquí habrá algo más</Text>
-            <Link href="/collaborate">
+            <Link passHref href="/collaborate">
               <Button
                 variant="outline"
                 color="#FF8F57"

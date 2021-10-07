@@ -9,7 +9,7 @@ export const Loader = () => {
             justifyContent="center"
             flexDirection="column"
         >
-            <Image src="/loader.gif" />
+            <Image alt="" src="/loader.gif" />
             <Text color='white' mt={4} fontWeight='bold' textAlign='center'>Cargando...</Text>
         </Flex>
     )

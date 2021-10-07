@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const ButtonWithIcon = ({ imagePath, icon, text, to }) => {
   return (
-    <Link href={to}>
+    <Link passHref href={to}>
       <Flex
         border="1px solid white"
         mx="auto"

@@ -94,7 +94,7 @@ export default function Page() {
                 <Heading as="h1" size="xl" color="white">
                 Momentazo?! vamos a inmortalizarlo
                 </Heading>
-                <Image src="/pepoarrive.gif" width='40px' />
+                <Image alt="" src="/pepoarrive.gif" width='40px' />
           </Flex>
         <form onSubmit={handleSubmit}>
           <FormControl mt={4}>

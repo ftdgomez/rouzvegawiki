@@ -1,4 +1,4 @@
-import { FormControl, Select, FormLabel, Textarea, Input as ChakraInput } from '@chakra-ui/react';
+import { FormControl, Select, FormLabel, FormHelperText, Textarea, Input as ChakraInput } from '@chakra-ui/react';
 
 export const Input = ({
     type,
@@ -21,8 +21,8 @@ export const Input = ({
                 color="white"
                 placeholder={selectPlaceholder || 'Selecciona'}
                 >
-                    {options.map((option) => (
-                        <option style={{ color: "black" }} value={option.value}>
+                    {options.map((option, index) => (
+                        <option key={`ikkk${index}`} style={{ color: "black" }} value={option.value}>
                             {option.text}
                         </option>
                     ))}

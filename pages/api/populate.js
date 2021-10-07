@@ -3,10 +3,9 @@ import Moment from '../../models/Moment'
 import Character from '../../models/Character'
 import Dictionary from '../../models/Dictionary'
 import Quote from '../../models/Quote'
-import moment from './moment'
 
 
-export default async (req, res) => {
+async function handler(req, res){
     const method = req.method
     try {
     await dbConnect()
@@ -40,3 +39,4 @@ export default async (req, res) => {
         })
     }
 }
+export default handler

@@ -74,7 +74,7 @@ export default function Page() {
                 <Heading as="h1" size="xl" color="white">
                 Ah, una de las frases celebres de Rouz... Qué alegría
                 </Heading>
-                <Image src="/pepoarrive.gif" width='40px' height='40px' />
+                <Image alt="" src="/pepoarrive.gif" width='40px' height='40px' />
           </Flex>
         <form onSubmit={handleSubmit}>
           <FormControl mt={4}>

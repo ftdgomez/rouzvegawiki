@@ -10,7 +10,7 @@ export default function Page(){
             justifyContent="center"
             flexDirection="column"
         >
-            <Image src="/kiss.gif" />
+            <Image alt="" src="/kiss.gif" />
             <Text color='white' mt={4} fontWeight='bold' textAlign='center'>
                 Vamossss!!! gracias por contribuir al profundo y extenso lore
                 de Rouz Vega.
