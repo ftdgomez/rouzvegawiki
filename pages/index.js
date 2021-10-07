@@ -93,7 +93,7 @@ export default function Home({ data }) {
             <Link href="/collaborate">
               <a>Colaborar con el diccionario +</a>
             </Link>
-            <Link passHref href="/collaborate">
+            <Link passHref href="/words">
               <Button
                 variant="outline"
                 color="#FF8F57"
@@ -275,7 +275,7 @@ export default function Home({ data }) {
             </Heading>
             <Grid templateColumns="1fr 1fr" mb="1rem">
               {data.characters?.map(({ _id, image, name }) => (
-                <Link passHref key={_id} mb="1rem" href={`/word/${_id}`}>
+                <Link passHref key={_id} mb="1rem" href={`/character/${_id}`}>
                   <Flex
                     bgImage={image}
                     bgSize="cover"
@@ -308,7 +308,7 @@ export default function Home({ data }) {
             <Link href="/collaborate">
               <a>Colaborar con los personajes +</a>
             </Link>
-            <Link passHref href="/collaborate">
+            <Link passHref href="/characters">
               <Button
                 variant="outline"
                 color="#FF8F57"
