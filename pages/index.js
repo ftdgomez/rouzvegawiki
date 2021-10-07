@@ -79,7 +79,6 @@ export default function Home({ data }) {
                         as="span"
                         color="#FF8F57"
                         fontSize="sm"
-                        fontSize="sm"
                       >
                         {translateWordType(wordType)}
                       </Text>

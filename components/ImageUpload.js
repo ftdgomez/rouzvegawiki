@@ -118,7 +118,7 @@ export const ImageUpload = ({ onChange:handler, withIcon, imgExtension }) => {
       >
         {files.length > 0 &&
           files.map((file, i) => {
-            return <Image key={`j-${i}`} src={file} alt="uploaded" />;
+            return <Picture key={`j-${i}`} src={file} alt="uploaded" />;
           })}
       </Grid>
       <canvas style={{ display: 'none' }} id='outputcanvas' width={480} height={480}></canvas>
